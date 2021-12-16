@@ -15,10 +15,11 @@
 
     <form>
         <input type="text" placeholder="Type name here"/>
-        <button>Add Student</button>
+        <button class = 'addStudent'>Add Student</button>
     </form>
 
     <script>
+        const addButton = document.getElementsByClassName('addStudent')
         const addForm = document.querySelector('form')
         const nameInput = document.querySelector('input')
 
@@ -29,7 +30,7 @@
                 .catch(err => console.log(err))
         }
 
-        addForm.addEventListener('submit', submitHandler)
+        addButton.addEventListener('click', submitHandler)
     </script>
 
 
