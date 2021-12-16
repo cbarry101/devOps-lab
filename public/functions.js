@@ -1,4 +1,4 @@
-const button = document.querySelector('button')
+const button = document.getElementById('luckyNumber')
 
 function randomNumber(){
     let max = 100;
